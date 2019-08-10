@@ -1,0 +1,16 @@
+body {
+    margin: auto;
+    background-color: blue;
+}
+
+h1 { 
+    text-align: center;
+}
+
+.container {
+    background-color: lightskyblue;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
