@@ -3,14 +3,57 @@ body {
     background-color: blue;
 }
 
-h1 { 
+h1, h2 { 
     text-align: center;
+    color: blue;
+    font-weight: bolder;
 }
 
 .container {
     background-color: lightskyblue;
-    height: 500px;
+    height: 750px;
     margin: auto;
     padding: 20px;
+}
+
+.question1 {
+    background-color: lightgreen;
+    color: white;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+.question2 {
+    background-color: blue;
+    color: white;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+.question3 {
+    background-color: lightgreen;
+    color: white;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+.question4 {
+    background-color: blue;
+    color: white;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
 }
 
