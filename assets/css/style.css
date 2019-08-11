@@ -11,7 +11,7 @@ h1, h2 {
 
 .container {
     background-color: lightskyblue;
-    height: 750px;
+    height: 800px;
     margin: auto;
     padding: 20px;
 }
@@ -24,6 +24,7 @@ h1, h2 {
     text-align: center;
     margin: auto;
     font-size: 20px;
+    padding: 20px;
 }
 
 .question2 {
@@ -34,6 +35,7 @@ h1, h2 {
     text-align: center;
     margin: auto;
     font-size: 20px;
+    padding: 20px;
 }
 
 
@@ -45,6 +47,7 @@ h1, h2 {
     text-align: center;
     margin: auto;
     font-size: 20px;
+    padding: 20px;
 }
 
 .question4 {
@@ -55,5 +58,27 @@ h1, h2 {
     text-align: center;
     margin: auto;
     font-size: 20px;
+    padding: 20px;
 }
 
+.question5 {
+    background-color: lightgreen;
+    color: white;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.question6 {
+    background-color: blue;
+    color: white;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+}
