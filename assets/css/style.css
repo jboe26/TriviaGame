@@ -16,6 +16,15 @@ h1, h2 {
     padding: 20px;
 }
 
+#startButton {
+    background-color: blue;
+    margin: auto; 
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    
+}
+
 .question1 {
     background-color: lightgreen;
     color: white;
