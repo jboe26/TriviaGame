@@ -12,13 +12,14 @@ $(document).ready(function () {
 
     //create a function to hide the start button when clicked
     $("#startButton").click(function () {
-        $(".start").hide();
+        $("#startButton").hide();
+        $(".questions").hide();
         $(".questions").show();
 
         // create timer to countdown from 15 seconds once the start button is clicked
         intervalID = setInterval(count, 1000);
         function count() {
-            $("#timeRemaining-text").text("You have " + time + " seconds left.");
+          //  $("#timeRemaining-text").text("You have " + time + " seconds left.");
             time--;
 
             if (time < 0) {
