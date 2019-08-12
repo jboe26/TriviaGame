@@ -1,7 +1,7 @@
 $(document).ready(function () {
     console.log("ready!");
 
-    $(".timer").text(time);
+    $(".timer").text(count);
 
     //Declare variable to hold setTimeout timer
     var intervalID;
@@ -20,7 +20,7 @@ $(document).ready(function () {
             $(".questions").show();
 
             // create timer to countdown from 15 seconds once the start button is clicked
-            intervalID = setInterval(count, 1000);
+            intervalID = setInterval(count, 120000);
             function count() {
                 //  $("#timeRemaining-text").text("You have " + time + " seconds left.");
                 // time--;
