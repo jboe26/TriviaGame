@@ -1,7 +1,9 @@
 $(document).ready(function () {
     console.log("ready!");
 
-    //Declare variable to hold setInterval timer
+    $(".timer").text(intervalID);
+
+    //Declare variable to hold setTimeout timer
     var intervalID;
 
     //Declare variable equal to the start time
@@ -13,24 +15,26 @@ $(document).ready(function () {
     //create a function to hide the start button when clicked
     $("#startButton").click(function () {
         $("#startButton").hide();
-        $(".questions").hide();
-        $(".questions").show();
+      
+            $(".questions").hide();
+            $(".questions").show();
 
-        // create timer to countdown from 15 seconds once the start button is clicked
-        intervalID = setInterval(count, 1000);
-        function count() {
-          //  $("#timeRemaining-text").text("You have " + time + " seconds left.");
-            time--;
+            // create timer to countdown from 15 seconds once the start button is clicked
+            intervalID = setInterval(count, 1000);
+            function count() {
+                //  $("#timeRemaining-text").text("You have " + time + " seconds left.");
+                time--;
 
-            if (time < 0) {
-                $(".questions").hide();
-                clearInterval(intervalID);
-                // $("#timeRemaining-text").hide();
-                // $("#done-text").show();
-                // $("#done-text").text("You answered " + correct + " out of the 6 questions correctly.");
+                if (time < 0) {
+                    $(".questions").hide();
+                    clearInterval(intervalID);
+                    // $("#timeRemaining-text").hide();
+                    // $("#done-text").show();
+                    // $("#done-text").text("You answered " + correct + " out of the 6 questions correctly.");
+                
 
             }
-        }
+        };
     });
 
 

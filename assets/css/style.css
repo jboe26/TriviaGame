@@ -25,6 +25,10 @@ h1, h2 {
     
 }
 
+.questions {
+     display: none;
+}
+
 .question1 {
     background-color: lightgreen;
     color: white;
