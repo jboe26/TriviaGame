@@ -44,7 +44,7 @@ $(document).ready(function () {
     
     var correctAnswers = 0;
 
-    for ()
+    // for (kliojp         )
 
     $("#correctAnswers").text("You got " + correctAnswers +" questions right.")
 
