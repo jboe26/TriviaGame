@@ -1,13 +1,26 @@
 $(document).ready(function () {
     console.log("ready!");
 
-    $(".timer").text(count);
+    //Declare variable equal to the start time
+    var time = 120;
+
+
+    $(".timer").text("You have " + time + " seconds remaining.");
+
+
 
     //Declare variable to hold setTimeout timer
-    var intervalID;
+    var intervalID = setInterval(count, 1000);
+    function count() {
+        $(".timer").text("You have " + time + " seconds remaining.");
+        time--;
 
-    //Declare variable equal to the start time
-    var time = 15;
+    if (time < 0) {
+        $(".questions").hide();
+        clearInterval(intervalID);
+    }
+
+
 
     //declare variable to track the number of questions answered correctly
     var correct = 0;
@@ -15,58 +28,30 @@ $(document).ready(function () {
     //create a function to hide the start button when clicked
     $("#startButton").click(function () {
         $("#startButton").hide();
-      
-            $(".questions").hide();
-            $(".questions").show();
 
-            // create timer to countdown from 15 seconds once the start button is clicked
-            intervalID = setInterval(count, 120000);
-            function count() {
-                //  $("#timeRemaining-text").text("You have " + time + " seconds left.");
-                // time--;
+        $(".questions").hide();
+        $(".questions").show();
 
-                if (time < 0) {
-                    $(".questions").hide();
-                    clearInterval(intervalID);
-                    // $("#timeRemaining-text").hide();
-                    // $("#done-text").show();
-                    // $("#done-text").text("You answered " + correct + " out of the 6 questions correctly.");
-                
 
-            }
-        };
+    
     });
 
+    $("#doneButton").click(function () {
+        $(".questions").hide();
+        clearInterval(intervalID);
+
+    var answers = ["a","b","c","d","e","f"];
+    
+    var correctAnswers = 0;
+
+    for ()
+
+    $("#correctAnswers").text("You got " + correctAnswers +" questions right.")
 
 
+    
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    }
 });

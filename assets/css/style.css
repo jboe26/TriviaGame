@@ -11,18 +11,26 @@ h1, h2 {
 
 .container {
     background-color: lightskyblue;
-    height: 800px;
+    height: 900px;
     margin: auto;
     padding: 20px;
 }
 
 #startButton {
     background-color: blue;
-    margin: auto; 
     width: 100px;
     height: 50px;
     font-weight: bold;
+    margin-left: 495px;
     
+}
+
+#doneButton { 
+    background-color: lightgreen;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    margin-left: 495px;
 }
 
 .questions {
