@@ -2,7 +2,7 @@ $(document).ready(function () {
     console.log("ready!");
 
     //Declare variable equal to the start time
-    var time = 120;
+    var time = 45;
 
 
     $(".timer").text("You have " + time + " seconds remaining.");
@@ -40,21 +40,27 @@ $(document).ready(function () {
             $(".questions").hide();
             clearInterval(intervalID);
 
-            var answers = ["#a", "#b", "#c", "#d", "#e", "#f"];
-
-            console.log(answers);
+            var answers = ["a", "b", "c", "d", "e", "f"];
+            
+            // console.log(answers);
 
             // trying to use this variable, not sure where-- i want it to be the correct answers for the questions. 
             
-            // answers 
+            // answers
 
             var correctAnswers = 0;
             var missed = 0;
             var incorrectAnswers = 0;
 
-           if ( (answers = "#a") && (answers = "#b") && (answers = "#c") && (answers = "#d") && (answers = "#e") && (answers = "#f") ) {
-               
-           }
+            for (i = 0; i < answers.length; i++) {
+                var answerChoice = $(".question1")
+            }
+
+
+
+          // if ( (answers = "a") && (answers = "b") && (answers = "c") && (answers = "d") && (answers = "e") && (answers = "f") ) {
+            //   correctAnswers = 6;
+           // }
                 
 
                 

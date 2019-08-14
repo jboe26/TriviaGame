@@ -6,58 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <title>Totally Trivial Trivia</title>
 </head>
-<div class="container">
-    <h1>Totally Trivial Trivia!</h1>
-    <h2>FRIENDS Edition</h2>
-    <br><br>
-    <button type="button" id="startButton">Start!</button>
-    <h1><span class="timer"></span></h1>
-    <div class="questions">
-        <div class="question1">
-            <p>What was Phoebe in charge of at Rachel's surprise party?</p>
-            <input type="radio" name="answer1" value="nothing">nothing <input type="radio" name="answer1"
-                value="foodanddrinks">food and drinks <input type="radio" name="answer1" value="cupsandice" id="a">cups and ice
-        </div>
-        <div class="question2">
-            <p>Who did Phoebe think would have very hairy children?</p>
-            <input type="radio" name="answer2" value="janiceandross" id="b">Janice & Ross <input type="radio" name="answer2"
-                value="rossandrachel">Ross & Rachel <input type="radio" name="answer2"
-                value="chandlerandmonica">Chandler & Monica
-        </div>
-        <div class="question3">
-            <p>What does Ross say on the couch episode of Friends?</p>
-            <input type="radio" name="answer3" value="TURNTURNTURN">TURN TURN TURN <input type="radio" name="answer3"
-                value="NO NO NO">NO NO NO <input type="radio" name="answer3" value="PIVOT PIVOT PIVOT" id="c">PIVOT PIVOT PIVOT
-        </div>
-        <div class="question4">
-            <p>Which of the girls did Joey mistakenly see in the shower?</p>
-            <input type="radio" name="answer4" value="rachel">Rachel <input type="radio" name="answer4"
-                value="Phoebe">Phoebe <input type="radio" name="answer4" value="Monica" id="d">Monica
-        </div>
-        <div class="question5">
-            <p>Who fell in an open grave?</p>
-            <input type="radio" name="answer5" value="ross" id="e">Ross <input type="radio" name="answer5"
-                value="Chandler">Chandler <input type="radio" name="answer5" value="Joey">Joey
-        </div>
-        <div class="question6">
-            <p>What did Joey eat for $50?</p>
-            <input type="radio" name="answer6" value="aglassoffat">A glass of fat <input type="radio" name="answer6"
-                value="book" id="f">A Book <input type="radio" name="answer6" value="awholepizza">A whole pizza
-        </div>
-        <button type="button" id="doneButton">Done!</button>
-    </div>
-    <br>
-<h2 id="correctAnswers"></h2>
-<h2 id="missed"></h2>
-<h2 id="incorrectAnswers"></h2>
-</div>
 
 <body>
+    <div class="container">
+        <h1>Totally Trivial Trivia!</h1>
+        <h2>FRIENDS Edition</h2>
+        <br><br>
+        <button type="button" id="startButton">Start!</button>
+        <h1><span class="timer"></span></h1>
+        <div class="questions">
+            <div class="question1">
+                <p>What was Phoebe in charge of at Rachel's surprise party?</p>
+                <input type="radio" name="answer1" value="nothing">nothing <input type="radio" name="answer1"
+                    value="foodanddrinks">food and drinks <input type="radio" name="answer1" value="a">cups and ice
+            </div>
+            <div class="question2">
+                <p>Who did Phoebe think would have very hairy children?</p>
+                <input type="radio" name="answer2" value="b">Janice & Ross <input type="radio" name="answer2"
+                    value="rossandrachel">Ross & Rachel <input type="radio" name="answer2"
+                    value="chandlerandmonica">Chandler & Monica
+            </div>
+            <div class="question3">
+                <p>What does Ross say on the couch episode of Friends?</p>
+                <input type="radio" name="answer3" value="TURNTURNTURN">TURN TURN TURN <input type="radio"
+                    name="answer3" value="NO NO NO">NO NO NO <input type="radio" name="answer3" value="c">PIVOT PIVOT
+                PIVOT
+            </div>
+            <div class="question4">
+                <p>Which of the girls did Joey mistakenly see in the shower?</p>
+                <input type="radio" name="answer4" value="rachel">Rachel <input type="radio" name="answer4"
+                    value="Phoebe">Phoebe <input type="radio" name="answer4" value="d">Monica
+            </div>
+            <div class="question5">
+                <p>Who fell in an open grave?</p>
+                <input type="radio" name="answer5" value="e">Ross <input type="radio" name="answer5"
+                    value="Chandler">Chandler <input type="radio" name="answer5" value="Joey">Joey
+            </div>
+            <div class="question6">
+                <p>What did Joey eat for $50?</p>
+                <input type="radio" name="answer6" value="aglassoffat">A glass of fat <input type="radio" name="answer6"
+                    value="f">A Book <input type="radio" name="answer6" value="awholepizza">A whole pizza
+            </div>
+            <button type="button" id="doneButton">Done!</button>
+        </div>
+        <br>
+        <h2 id="correctAnswers"></h2>
+        <h2 id="missed"></h2>
+        <h2 id="incorrectAnswers"></h2>
+    </div>
+
+
     <script src="assets/javascript/app.js"></script>
 </body>
 
