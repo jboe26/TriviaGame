@@ -21,7 +21,12 @@ h1, h2 {
     width: 100px;
     height: 50px;
     font-weight: bold;
-    margin-left: 495px;
+    margin-left: 400px;
+    
+}
+
+.timer {
+    color: white;
     
 }
 
