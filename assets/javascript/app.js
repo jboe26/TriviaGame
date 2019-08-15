@@ -40,9 +40,9 @@ $(document).ready(function () {
             $(".questions").hide();
             clearInterval(intervalID);
 
-            var answers = ["a", "b", "c", "d", "e", "f"];
+            var answers = ["a", "b", "c", "d", "e"];
             
-            // console.log(answers);
+            
 
             // trying to use this variable, not sure where-- i want it to be the correct answers for the questions. 
             
@@ -53,17 +53,18 @@ $(document).ready(function () {
             var incorrectAnswers = 0;
 
             for (i = 0; i < answers.length; i++) {
-                var answerChoice = $(".question1")
+                var answerChoice = 
+                $(".question1")
+                $(".question2")
+                $(".question3")
+                $(".question4")
+                $(".question5")
+                console.log(answerChoice);
+
+                
             }
 
-
-
-          // if ( (answers = "a") && (answers = "b") && (answers = "c") && (answers = "d") && (answers = "e") && (answers = "f") ) {
-            //   correctAnswers = 6;
-           // }
-                
-
-                
+            
 
             $("#correctAnswers").text("You got " + correctAnswers + " questions right.");
             $("#missed").text("You missed " + missed + " questions.");
