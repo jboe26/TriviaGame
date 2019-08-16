@@ -1,23 +1,23 @@
 body {
     margin: auto;
-    background-color: blue;
+    background-color: yellow;
 }
 
 h1, h2 { 
     text-align: center;
-    color: blue;
+    color: purple;
     font-weight: bolder;
 }
 
 .container {
-    background-color: lightskyblue;
+    background-color: lavender;
     height: 900px;
     margin: auto;
     padding: 20px;
 }
 
 #startButton {
-    background-color: blue;
+    background-color: purple;
     width: 100px;
     height: 50px;
     font-weight: bold;
@@ -26,12 +26,12 @@ h1, h2 {
 }
 
 .timer {
-    color: white;
+    color: purple;
     
 }
 
 #doneButton { 
-    background-color: lightgreen;
+    background-color: purple;
     width: 100px;
     height: 50px;
     font-weight: bold;
@@ -43,8 +43,8 @@ h1, h2 {
 }
 
 .question1 {
-    background-color: lightgreen;
-    color: white;
+    background-color: yellow;
+    color: black;
     width: 700px;
     height: 100px;
     text-align: center;
@@ -55,7 +55,7 @@ h1, h2 {
 
 .question2 {
     background-color: blue;
-    color: white;
+    color: black;
     width: 700px;
     height: 100px;
     text-align: center;
@@ -66,8 +66,8 @@ h1, h2 {
 
 
 .question3 {
-    background-color: lightgreen;
-    color: white;
+    background-color: yellow;
+    color: black;
     width: 700px;
     height: 100px;
     text-align: center;
@@ -78,7 +78,7 @@ h1, h2 {
 
 .question4 {
     background-color: blue;
-    color: white;
+    color: black;
     width: 700px;
     height: 100px;
     text-align: center;
@@ -88,8 +88,8 @@ h1, h2 {
 }
 
 .question5 {
-    background-color: lightgreen;
-    color: white;
+    background-color: yellow;
+    color: black;
     width: 700px;
     height: 100px;
     text-align: center;

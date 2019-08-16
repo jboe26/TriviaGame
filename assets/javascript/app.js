@@ -42,15 +42,12 @@ $(document).ready(function () {
 
             var answers = ["a", "b", "c", "d", "e"];
             
-            
-
-            // trying to use this variable, not sure where-- i want it to be the correct answers for the questions. 
-            
-            // answers
+        
 
             var correctAnswers = 0;
             var missed = 0;
             var incorrectAnswers = 0;
+            var unansweredQuestions = 0;
 
             for (i = 0; i < answers.length; i++) {
                 var answerChoice = 
@@ -60,15 +57,18 @@ $(document).ready(function () {
                 $(".question4")
                 $(".question5")
                 console.log(answerChoice);
-
-                
+            
+                 
+            
             }
+
+            
 
             
 
             $("#correctAnswers").text("You got " + correctAnswers + " questions right.");
             $("#missed").text("You missed " + missed + " questions.");
-            $("#incorrectAnswers").text("You missed " + incorrectAnswers + " questions.")
+            $("#incorrectAnswers").text("You got " + incorrectAnswers + " questions wrong.")
 
         });
 
