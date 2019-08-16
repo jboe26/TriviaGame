@@ -40,31 +40,30 @@ $(document).ready(function () {
             $(".questions").hide();
             clearInterval(intervalID);
 
+
             var answers = ["a", "b", "c", "d", "e"];
-            
-        
+
+
 
             var correctAnswers = 0;
             var missed = 0;
             var incorrectAnswers = 0;
-            var unansweredQuestions = 0;
+
 
             for (i = 0; i < answers.length; i++) {
-                var answerChoice = 
+                var answerChoice =
                 $(".question1")
                 $(".question2")
                 $(".question3")
                 $(".question4")
                 $(".question5")
                 console.log(answerChoice);
-            
-                 
-            
             }
 
-            
 
-            
+
+
+
 
             $("#correctAnswers").text("You got " + correctAnswers + " questions right.");
             $("#missed").text("You missed " + missed + " questions.");
@@ -72,6 +71,6 @@ $(document).ready(function () {
 
         });
 
-
     }
+
 });
