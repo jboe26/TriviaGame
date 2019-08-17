@@ -1,6 +1,7 @@
 $(document).ready(function () {
     console.log("ready!");
 
+        
     //Declare variable equal to the start time
     var time = 45;
 
@@ -17,13 +18,9 @@ $(document).ready(function () {
 
         if (time < 0) {
             $(".questions").hide();
+            $("#start").hide();
             clearInterval(intervalID);
         }
-
-
-
-        //declare variable to track the number of questions answered correctly
-        var correct = 0;
 
         //create a function to hide the start button when clicked
         $("#startButton").click(function () {
@@ -52,7 +49,7 @@ $(document).ready(function () {
 
             for (i = 0; i < answers.length; i++) {
                 var answerChoice =
-                $(".question1")
+                    $(".question1")
                 $(".question2")
                 $(".question3")
                 $(".question4")
