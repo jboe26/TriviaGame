@@ -1,7 +1,11 @@
 $(document).ready(function () {
     console.log("ready!");
 
-        
+
+    var correctAnswers = 0;
+    var missed = 0;
+    var incorrectAnswers = 0;
+
     //Declare variable equal to the start time
     var time = 45;
 
@@ -38,36 +42,30 @@ $(document).ready(function () {
             clearInterval(intervalID);
 
 
-            var answers = ["a", "b", "c", "d", "e"];
-
-
-
-            var correctAnswers = 0;
-            var missed = 0;
-            var incorrectAnswers = 0;
-
-
-            for (i = 0; i < answers.length; i++) {
-                var answerChoice =
-                    $(".question1")
-                $(".question2")
-                $(".question3")
-                $(".question4")
-                $(".question5")
-                console.log(answerChoice);
-            }
-
-
-
-
-
-
             $("#correctAnswers").text("You got " + correctAnswers + " questions right.");
             $("#missed").text("You missed " + missed + " questions.");
             $("#incorrectAnswers").text("You got " + incorrectAnswers + " questions wrong.")
 
+            evaluateQuestion("answer1", "#a");
+            evaluateQuestion("answer2" , "#b");
+            evaluateQuestion("answer4", "#c");
+            evaluateQuestion("answer5" , "#d");
+            evaluateQuestion("answer6" , "#e");
         });
 
+        function evaluateQuestion(currentQuestion, id) {
+
+            var radioValue = $("input[name='" + currentQuestion + "']:checked").val();
+            if (radioValue) {
+                $(id).val()
+            }
+            else {
+                missed++;
+            }
+
+    
+
     }
+}
 
 });
