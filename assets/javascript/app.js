@@ -3,69 +3,71 @@ $(document).ready(function () {
 
 
     var correctAnswers = 0;
-    var missed = 0;
+    var missed = 5;
     var incorrectAnswers = 0;
-
+    var intervalID = null;
     //Declare variable equal to the start time
-    var time = 45;
+    var time = 10;
 
 
     $(".timer").text("You have " + time + " seconds remaining.");
 
+    //create a function to hide the start button when clicked
+    $("#startButton").click(function () {
+        //Declare variable to hold setInterval timer
+        intervalID = setInterval(count, 1000);
+        $("#startButton").hide();
 
 
-    //Declare variable to hold setTimeout timer
-    var intervalID = setInterval(count, 1000);
+        $(".questions").hide();
+        $(".questions").show();
+
+
+
+    });
+
+    $("#doneButton").click(function () {
+        $(".questions").hide();
+        clearInterval(intervalID);
+
+
+        evaluateQuestion("answer1", "a");
+        evaluateQuestion("answer2", "b");
+        evaluateQuestion("answer4", "c");
+        evaluateQuestion("answer5", "d");
+        evaluateQuestion("answer6", "e");
+
+        $("#correctAnswers").text("You got " + correctAnswers + " questions right.");
+        $("#missed").text("You missed " + missed + " questions.");
+        $("#incorrectAnswers").text("You got " + incorrectAnswers + " questions wrong.")
+    });
+
+
     function count() {
         $(".timer").text("You have " + time + " seconds remaining.");
         time--;
 
         if (time < 0) {
-            $(".questions").hide();
             $("#start").hide();
-            clearInterval(intervalID);
+            $("#doneButton").click();
+
+        }
+    }
+
+    function evaluateQuestion(currentQuestion, rightAnswer) {
+
+        var radioValue = $("input[name='" + currentQuestion + "']:checked").val();
+        if (radioValue) {
+            missed--;
         }
 
-        //create a function to hide the start button when clicked
-        $("#startButton").click(function () {
-            $("#startButton").hide();
-
-            $(".questions").hide();
-            $(".questions").show();
-
+        if (radioValue == rightAnswer) {
+            correctAnswers++;
+        } else {
+            incorrectAnswers++;
+        }
 
 
-        });
-
-        $("#doneButton").click(function () {
-            $(".questions").hide();
-            clearInterval(intervalID);
-
-
-            $("#correctAnswers").text("You got " + correctAnswers + " questions right.");
-            $("#missed").text("You missed " + missed + " questions.");
-            $("#incorrectAnswers").text("You got " + incorrectAnswers + " questions wrong.")
-
-            evaluateQuestion("answer1", "#a");
-            evaluateQuestion("answer2" , "#b");
-            evaluateQuestion("answer4", "#c");
-            evaluateQuestion("answer5" , "#d");
-            evaluateQuestion("answer6" , "#e");
-        });
-
-        function evaluateQuestion(currentQuestion, id) {
-
-            var radioValue = $("input[name='" + currentQuestion + "']:checked").val();
-            if (radioValue) {
-                $(id).val()
-            }
-            else {
-                missed++;
-            }
- 
-    
 
     }
-}
-
 });
